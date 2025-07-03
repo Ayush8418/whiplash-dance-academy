@@ -1,6 +1,12 @@
+// 'use client';
+
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
+import { ThemeProvider } from "@/components/theme-provider";
+import ThemeButton from "@/components/ThemeButton";
+import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,9 +20,28 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
-    </html>
+      <html lang="en" className="dark overflow-x-hidden ">
+        <body className={inter.className}>
+          
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="dark"
+            enableSystem
+            disableTransitionOnChange
+          >
+            <img src="" alt="" />
+            <div className="fixed top-5 left-5 z-50 bg-white">
+              
+            </div>
+            <Navbar/>
+            <ThemeButton/>
+            {children}
+            <Footer/>
+          </ThemeProvider>
+
+          </body>
+      </html>
   );
 }

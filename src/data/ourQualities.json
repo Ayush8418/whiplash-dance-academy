@@ -1,0 +1,28 @@
+{
+    "content": [
+    {
+        "title": "Collaborative Spirit",
+        "description": "At our dance academy, we believe in the power of teamwork and shared passion. Students, instructors, and choreographers work hand-in-hand, building a strong sense of community. Whether you're a beginner or a seasoned dancer, you'll always feel supported and inspired to grow with others.",
+        "image": "https://www.tandfonline.com/cms/asset/b154154a-6dc1-4f25-8dce-dd6af62212ca/udep_a_1711674_uf0002_c.jpg",
+        "background": "linear-gradient(to bottom right, var(--cyan-500), var(--emerald-500))"
+    },
+    {
+        "title": "Real-Time Progress",
+        "description": "Watch your skills evolve with every class. Our hands-on training and immediate feedback help students see real improvements in real time. No waiting, no guessing — just clear, measurable progress that builds confidence and skill with every step.",
+        "image": "https://dancersgroup.org/wp-content/uploads/2025/06/insta-square.jpg",
+        "background": "linear-gradient(to bottom right, var(--cyan-500), var(--emerald-500))"
+    },
+    {
+        "title": "Consistent Growth",
+        "description": "With structured lessons and personalized feedback, our students are always building on their strengths. We track progress to ensure each dancer is growing at their own pace — confidently, consistently, and with purpose.",
+        "image": "https://resourcesfordanceteachers.com/wp-content/uploads/2019/02/staircasejpg.jpg",
+        "background": "linear-gradient(to bottom right, var(--orange-500), var(--yellow-500))"
+    },
+    {
+        "title": "Creative Energy",
+        "description": "Never run out of inspiration. Our vibrant classes, exciting choreography, and enthusiastic instructors keep the energy high and the passion alive. Every session is a fresh opportunity to express yourself and ignite your love for dance.",
+        "image": "https://media.istockphoto.com/id/476021886/photo/beautiful-young-ballet-dancer-jumping-on-a-lilac-background.jpg?s=612x612&w=0&k=20&c=Y4top2o1DseOu9y6X8oTxRfp_1rSFLLZYKf_pEuQLZ8=",
+        "background": "linear-gradient(to bottom right, var(--cyan-500), var(--emerald-500))"
+    }
+    ]
+}

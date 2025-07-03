@@ -1,0 +1,29 @@
+{
+    "testimonials": [
+    {
+        "quote": "Joining this dance academy has been one of the best decisions I've ever made. The instructors are incredibly talented, and the atmosphere is so positive and welcoming.",
+        "name": "Aanya Sharma",
+        "title": "Student - Intermediate Ballet"
+    },
+    {
+        "quote": "My daughter has blossomed since enrolling here. Not only has her technique improved, but her confidence has grown immensely. Highly recommended for young dancers!",
+        "name": "Priya Mehta",
+        "title": "Parent of a Junior Student"
+    },
+    {
+        "quote": "The choreography is fresh and creative, and every class is full of energy. It’s not just a dance academy—it’s a second home.",
+        "name": "Rohan Verma",
+        "title": "Adult Hip-Hop Student"
+    },
+    {
+        "quote": "This academy combines discipline with fun in the best way possible. Whether you're a beginner or advanced, they help you grow at your own pace.",
+        "name": "Neha Kapoor",
+        "title": "Student - Contemporary Level 2"
+    },
+    {
+        "quote": "I've trained at multiple studios, but the passion and professionalism here are unmatched. The faculty truly care about each dancer's journey.",
+        "name": "Kabir Khanna",
+        "title": "Senior Performance Team Member"
+    }
+    ]
+}

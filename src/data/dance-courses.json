@@ -1,0 +1,54 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "title": "Beginner Hip Hop Dance",
+      "slug": "beginner-hip-hop-dance",
+      "description": "Get started with the fundamentals of hip hop, including popping, locking, and basic choreography.",
+      "price": 39.99,
+      "instructor": "Les Twins",
+      "isFeatured": true,
+      "image": "/dance-card-photos/hip-hop.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Bollywood Fusion Dance",
+      "slug": "bollywood-fusion-dance",
+      "description": "Experience the vibrant energy of Bollywood with a blend of classical and modern dance moves.",
+      "price": 42.50,
+      "instructor": "Shiamak Davar",
+      "isFeatured": false,
+      "image": "/dance-card-photos/concert-photo.jpeg"
+    },
+    {
+      "id": 3,
+      "title": "Katthak Dance Form ",
+      "slug": "salsa-partner-work",
+      "description": "Learn the essentials of salsa dancing with a focus on partner connection and footwork.",
+      "price": 49.00,
+      "instructor": "Frankie Martinez",
+      "isFeatured": true,
+      "image": "/dance-card-photos/kathak.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Ballet Foundations",
+      "slug": "ballet-foundations",
+      "description": "Master the basics of ballet with proper form, posture, and technique for all ages.",
+      "price": 55.00,
+      "instructor": "Tamara Rojo",
+      "isFeatured": false,
+      "image": "/dance-card-photos/balle.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Contemporary Dance Expression",
+      "slug": "contemporary-dance-expression",
+      "description": "Explore expressive movement through contemporary dance techniques and performance.",
+      "price": 59.99,
+      "instructor": "Misty Copeland",
+      "isFeatured": false,
+      "image": "/dance-card-photos/yogaDance.jpg"
+    }
+  ]
+}

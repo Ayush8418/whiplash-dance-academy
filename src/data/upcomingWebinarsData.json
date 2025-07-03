@@ -1,0 +1,34 @@
+{
+    "upcomingWebinarsList" : [
+    {
+        "title": "Contemporary Dance Basics",
+        "description": "An introductory webinar exploring the fundamentals of contemporary dance for beginners.",
+        "link": "https://yourdanceacademy.com/webinars/contemporary-basics"
+    },
+    {
+        "title": "Advanced Ballet Techniques",
+        "description": "A session designed for experienced dancers looking to refine their ballet skills and techniques.",
+        "link": "https://yourdanceacademy.com/webinars/advanced-ballet"
+    },
+    {
+        "title": "Hip-Hop Groove Essentials",
+        "description": "Discover the core moves and rhythm patterns that define hip-hop dance culture.",
+        "link": "https://yourdanceacademy.com/webinars/hiphop-essentials"
+    },
+    {
+        "title": "Creative Choreography Workshop",
+        "description": "Learn how to structure and create original dance routines with professional choreographers.",
+        "link": "https://yourdanceacademy.com/webinars/choreography-workshop"
+    },
+    {
+        "title": "Latin Dance Fusion",
+        "description": "A vibrant exploration of Latin dance styles including Salsa, Bachata, and more.",
+        "link": "https://yourdanceacademy.com/webinars/latin-fusion"
+    },
+    {
+        "title": "Stretch & Strength for Dancers",
+        "description": "A wellness-focused webinar to improve flexibility and strength through targeted exercises.",
+        "link": "https://yourdanceacademy.com/webinars/stretch-strength"
+    }
+    ]
+}
