@@ -2,6 +2,7 @@
 import React from "react";
 import { BackgroundGradient } from "./ui/background-gradient";
 import { IconAppWindow } from "@tabler/icons-react"; 
+import Image from "next/image";
 
 interface CourseCardProps {
   title: string;
@@ -14,11 +15,11 @@ const CourseCards : React.FC<CourseCardProps> = ({title, description, price, ima
   return (
     <div className="min-w-60">
       <BackgroundGradient className="rounded-[22px] max-w-sm p-4 sm:px-10 bg-white dark:bg-zinc-900">
-        <img
+        <Image
           src={image}
           alt="jordans"
-          height="400px"
-          width="600px"
+          height={400}
+          width={600}
           className="object-contain"
         />
         <p className="text-base sm:text-xl text-black mt-2 mb-1 truncate dark:text-neutral-200">

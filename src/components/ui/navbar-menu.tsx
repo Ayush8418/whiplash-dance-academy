@@ -1,8 +1,10 @@
 "use client";
 import React from "react";
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
+import Image from "next/image";
+import type { Transition } from 'framer-motion';
 
-const transition = {
+const transition : Transition = {
   type: "spring",
   mass: 0.5,
   damping: 11.5,
@@ -90,10 +92,11 @@ export const ProductItem = ({
     <a href={href} className="flex space-x-2">
       {
         src && src.trim() !== '' &&
-          <img
+          <Image
             src={src}
-            width="180px"
-            height="50px"
+            alt="course"
+            width={180}
+            height={50}
             className="rounded-md shadow-2xl"
           />
       }

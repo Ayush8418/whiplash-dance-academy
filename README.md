@@ -1,36 +1,82 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
 
-First, run the development server:
+  <h1>🕺 Whiplash Dance Academy – Official Website</h1>
+  <img src="./public/screenshots/theme-black.png" alt="Home Page Preview">
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+  <p>A modern, fully responsive website built for <strong>Whiplash Dance Academy</strong> using <strong>Next.js</strong>, <strong>TypeScript</strong>, and <strong>Tailwind CSS</strong>. The project features stunning UI with <strong>Aceternity UI components</strong>, interactive <strong>3D visuals</strong>, <strong>light/dark theme support</strong>, and a working <strong>contact form with email integration</strong>.</p>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+  <h2>✨ Features</h2>
+  <ul>
+    <li>Beautiful UI built with <strong>Aceternity UI</strong></li>
+    <li><strong>Light/Dark theme</strong> toggle using <code>next-themes</code></li>
+    <li>Immersive <strong>3D components</strong> for visual engagement</li>
+    <li><strong>Contact form with email functionality</strong> via Nodemailer (Gmail SMTP)</li>
+    <li>Fully <strong>responsive design</strong> optimized for all screen sizes</li>
+    <li>Clean, modular codebase with <strong>TypeScript</strong></li>
+    <li>SEO-friendly and fast-loading pages</li>
+  </ul>
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+  <h2>⚙️ Tech Stack</h2>
+  <table>
+    <thead>
+      <tr><th>Technology</th><th>Description</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Next.js</td><td>React-based framework for the web</td></tr>
+      <tr><td>TypeScript</td><td>Strongly typed JavaScript</td></tr>
+      <tr><td>Tailwind CSS</td><td>Utility-first CSS framework</td></tr>
+      <tr><td>Aceternity UI</td><td>Interactive & animated UI components</td></tr>
+      <tr><td>next-themes</td><td>Theme switching for Next.js</td></tr>
+      <tr><td>Nodemailer</td><td>Email sending via contact form</td></tr>
+    </tbody>
+  </table>
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+  <h2>📬 Mail Configuration</h2>
+  <p>To enable the contact form functionality:</p>
+  <ol>
+    <li>Enable <strong>2-Step Verification</strong> on your Gmail account.</li>
+    <li>Generate an <strong>App Password</strong> from your Google account.</li>
+    <li>Create a <code>.env.local</code> file in your project root and add:</li>
+  </ol>
 
-## Learn More
+  <pre><code>GMAIL_USER=your-email@gmail.com
+GMAIL_PASS=your-app-password</code></pre>
 
-To learn more about Next.js, take a look at the following resources:
+  <p>Restart the server to apply changes.</p>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+  <h2>🚀 Getting Started</h2>
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+  <h3>1. Clone the Repository</h3>
+  <pre><code>git clone https://github.com/yourusername/whiplash-dance-site.git
+cd whiplash-dance-site</code></pre>
 
-## Deploy on Vercel
+  <h3>2. Install Dependencies</h3>
+  <pre><code>npm install</code></pre>
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+  <h3>3. Start Development Server</h3>
+  <pre><code>npm run dev</code></pre>
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+  <h3>4. Build for Production</h3>
+  <pre><code>npm run build
+npm run start</code></pre>
+
+  <h2>🖼️ Additional Screenshots</h2>
+
+  <h3>Theme Toggle</h3>
+  <img src="./public/screenshots/theme-white.png" alt="Theme Toggle">
+  <img src="./public/screenshots/theme-black.png" alt="Theme Toggle">
+  
+  <h3>Contact Form</h3>
+  <img src="./public/screenshots/contact.png" alt="Contact Form">
+
+  <h3>3D Component Section</h3>
+  <img src="./public/screenshots/3d-section.png" alt="3D Components">
+
+  <h3>Extra Benefits cards and Footer</h3>
+  <img src="./public/screenshots/benefits.png"/>
+
+  <h2>📄 License</h2>
+  <p>This project is licensed under the <strong>MIT License</strong>.</p>
+
+  <h2>🤝 Contact</h2>
+  <p><strong>Ayush Kumar</strong> – <a href="mailto:ayushkumar8418@gmail.com">ayushkumar8418@gmail.com</a></p>

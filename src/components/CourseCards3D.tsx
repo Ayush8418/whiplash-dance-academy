@@ -2,6 +2,7 @@
 
 import React from "react";
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
+import Image from "next/image";
 
 type courseType = {
   key: number,
@@ -35,7 +36,7 @@ function CourseCards3D({key,
           {description}
         </CardItem>
         <CardItem translateZ="100" className="w-full mt-4">
-          <img
+          <Image
             src={image}
             height="1000"
             width="1000"
