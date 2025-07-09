@@ -1,6 +1,6 @@
 'use client';
 
-import { FC } from 'react';
+import { FC, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import sendEmail from '../utils/send-email';
 
@@ -12,10 +12,20 @@ export type FormData = {
 };
 
 const ContactForm: FC = () => {
-  const { register, handleSubmit } = useForm<FormData>();
+  const { register, handleSubmit , reset} = useForm<FormData>();
+  const [responseMessage, setResponseMessage] = useState<string | null>(null);
+  const [isError, setIsError] = useState<boolean>(false);
 
-  function onSubmit(data: FormData) {
-    sendEmail(data);
+  async function onSubmit(data: FormData) {
+    try {
+      await sendEmail(data);
+      setResponseMessage('Message sent successfully!');
+      setIsError(false);
+      reset();
+    } catch (error) {
+      setResponseMessage('Failed to send message. Please try again.');
+      setIsError(true);
+    }
   }
 
   return (
@@ -81,6 +91,11 @@ const ContactForm: FC = () => {
           Submit
         </button>
       </div>
+      {responseMessage && (
+        <p className={`mt-4 text-base font-medium ${isError ? 'text-red-600' : 'text-green-600'}`}>
+          {responseMessage}
+        </p>
+      )}
     </form>
   );
 };

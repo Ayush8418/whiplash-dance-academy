@@ -1,11 +1,13 @@
-import CourseCards from "@/components/CourseCards";
+'use client'
+// import CourseCards from "@/components/CourseCards";
 import HeroSection from "@/components/HeroSection";
-import Image from "next/image";
+// import Image from "next/image";
 import danceCourse from "../data/dance-courses.json";
 import StickyScrollRevealDemo from "../components/StickyScrollRevealDemo";
 import InfiniteCards from "@/components/InfiniteCards";
 import UpcomingWebinars from "@/components/UpcomingWebinars";
 import Trainers from "@/components/Trainers";
+import CourseCard3D from '@/components/CourseCards3D';
 
 export default function Home() {
 
@@ -25,11 +27,14 @@ export default function Home() {
           {
             courses.map((course, index)=> {
               return (
-              <CourseCards key={index}
-                title={course.title}
-                description={course.description}
-                price={course.price}
-                image={course.image} />
+              <CourseCard3D
+                              key={index}
+                              title={course.title}
+                              image={course.image}
+                              description={course.description}
+                              price={course.price}
+                              instructor={course.instructor}
+                            />
               )
             })
           }
