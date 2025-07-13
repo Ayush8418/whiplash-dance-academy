@@ -5,7 +5,6 @@ import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 import Image from "next/image";
 
 type courseType = {
-  key: number,
   title: string,
   description: string,
   price: number,
@@ -13,7 +12,7 @@ type courseType = {
   image: string
 }
 
-function CourseCards3D({key,
+function CourseCards3D({
   title,
   description,
   price,
@@ -57,7 +56,7 @@ function CourseCards3D({key,
           <CardItem
             translateZ={20}
             as="a"
-            href={`/course/${title}`}
+            href={`/courses/course?title=${title}`}
             className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
           >
             Buy Now ${price}

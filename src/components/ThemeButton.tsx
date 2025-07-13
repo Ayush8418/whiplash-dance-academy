@@ -27,17 +27,13 @@ const ThemeButton = () => {
     if(!isClient) return null;
 
   return (
-    <div className="fixed top-8 right-8 z-50">
+    <div className="fixed top-10 right-5 z-50">
         <button onClick={toggleTheme} className="bg-white p-2 rounded-2xl">
-            {(theme == "light")?
+            {
+              (theme == "light")?
               <Sun className="h-[1.2rem] w-[1.2rem] scale-100 rotate-0 transition-all dark:scale-0 dark:-rotate-90" color="black" />
-              : 
-              (
-                (theme=="dark")?
-                  <Moon className="h-[1.2rem] w-[1.2rem] scale-0 rotate-90 transition-all dark:scale-100 dark:rotate-0" color="black" />
-                  : 
-                  <Computer className="h-[1.2rem] w-[1.2rem] scale-0 rotate-90 transition-all dark:scale-100 dark:rotate-0" color="black" />
-              )
+              :
+              <Moon className="h-[1.2rem] w-[1.2rem] scale-0 rotate-90 transition-all dark:scale-100 dark:rotate-0" color="black" />
             }
         </button>
     </div>

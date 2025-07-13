@@ -3,6 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import type { Transition } from 'framer-motion';
+import Link from "next/link";
 
 const transition : Transition = {
   type: "spring",
@@ -26,12 +27,12 @@ export const MenuItem = ({
 }) => {
   return (
     <div onMouseEnter={() => setActive(item)} className="relative" >
-      <motion.p
-        transition={{ duration: 0.3 }}
-        className="cursor-pointer text-black hover:opacity-[0.9] dark:text-white"
-      >
-        {item}
-      </motion.p>
+        <motion.p
+          transition={{ duration: 0.3 }}
+          className="cursor-pointer text-black hover:opacity-[0.9] dark:text-white"
+        >
+          {item}
+        </motion.p>
       {active !== null && children &&(
         <motion.div
           initial={{ opacity: 0, scale: 0.85, y: 10 }}

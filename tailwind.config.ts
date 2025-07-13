@@ -44,6 +44,7 @@ const config: Config = {
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
   		},
+		
   		colors: {
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
@@ -88,7 +89,15 @@ const config: Config = {
   		}
   	}
   },
-  plugins: [heroui(), require("tailwindcss-animate")],
+  plugins: [heroui(), require("tailwindcss-animate"),
+	function ({ addUtilities }: any) {
+    addUtilities({
+      '.slow-scroll': {
+        scrollBehavior: 'smooth'
+      }
+    });
+  }
+  ],
 };
 
 export default config;

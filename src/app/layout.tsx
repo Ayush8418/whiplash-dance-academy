@@ -1,5 +1,3 @@
-// 'use client';
-
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -7,6 +5,8 @@ import Navbar from "@/components/Navbar";
 import { ThemeProvider } from "@/components/theme-provider";
 import ThemeButton from "@/components/ThemeButton";
 import Footer from "@/components/Footer";
+import ProfileButton from "@/components/ProfileButton";
+import Logo from "@/components/Logo";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,28 +20,41 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  
   return (
-      <html lang="en" className="dark overflow-x-hidden ">
-        <body className={inter.className}>
-          
-          <ThemeProvider
-            attribute="class"
-            defaultTheme="dark"
-            enableSystem
-            disableTransitionOnChange
-          >
-            <img src="" alt="" />
-            <div className="fixed top-5 left-5 z-50 bg-white">
-              
-            </div>
-            <Navbar/>
+    <html lang="en" className="dark overflow-x-hidden" suppressHydrationWarning>
+      <body className={inter.className}>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <div className="lg:hidden fixed top-0 left-0 right-0 z-50 flex justify-between items-center px-4 py-3 bg-white dark:bg-black border-b border-gray-200 dark:border-gray-800">
             <ThemeButton/>
-            {children}
-            <Footer/>
-          </ThemeProvider>
+            <ProfileButton/>
+            <Logo/>
+          </div>
 
-          </body>
-      </html>
+          {/* Desktop Navbar */}
+          <div className="hidden lg:block">
+            <Navbar />
+            <ThemeButton/>
+            <ProfileButton/>
+            <Logo/>
+          </div>
+
+          {/* Mobile Navbar (bottom) */}
+          <div className="lg:hidden fixed bottom-0 left-0 right-0 z-50">
+            <Navbar mobile />
+          </div>
+
+          <div className="pt-16 lg:pt-0 pb-20 lg:pb-0">
+            {children}
+          </div>
+          
+          <Footer />
+        </ThemeProvider>
+      </body>
+    </html>
   );
 }

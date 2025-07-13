@@ -9,7 +9,7 @@
     {
         "title": "Real-Time Progress",
         "description": "Watch your skills evolve with every class. Our hands-on training and immediate feedback help students see real improvements in real time. No waiting, no guessing — just clear, measurable progress that builds confidence and skill with every step.",
-        "image": "https://dancersgroup.org/wp-content/uploads/2025/06/insta-square.jpg",
+        "image": "qualities/progress.jpg",
         "background": "linear-gradient(to bottom right, var(--cyan-500), var(--emerald-500))"
     },
     {
