@@ -1,4 +1,3 @@
-'use client'
 import { getDataFromToken } from "@/helper/getDataFromToken";
 import Customer from "@/models/userModel";
 import { connect } from "@/dbConfig/dbConfig";
