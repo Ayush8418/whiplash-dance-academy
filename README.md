@@ -1,4 +1,7 @@
 <h1>🕺 Whiplash Dance Academy – Official Website</h1>
+<h2>
+  <a href="https://whiplash-dance-academy.vercel.app/">🔗Live demo : https://whiplash-dance-academy.vercel.app/</a>
+</h2>
 <img src="./public/screenshots/theme-black.png" alt="Home Page Preview">
 
 <p>A modern, fully responsive website built for <strong>Whiplash Dance Academy</strong> using <strong>Next.js</strong>, <strong>TypeScript</strong>, and <strong>Tailwind CSS</strong>. The project features stunning UI with <strong>Aceternity UI components</strong>, interactive <strong>3D visuals</strong>, <strong>light/dark theme support</strong>, complete <strong>user authentication system</strong>, and a working <strong>contact form with email integration</strong>.</p>
