@@ -1,4 +1,3 @@
-'use client'
 import { getDataFromToken } from "@/helper/getDataFromToken";
 import { NextRequest, NextResponse } from 'next/server';
 
