@@ -28,7 +28,7 @@ function Verify() {
       return;
     }
     try {
-      const res = await axios.post(`http://localhost:3000/api/user/verify?token=${encodeURIComponent(token)}`);
+      const res = await axios.post(`/api/user/verify?token=${encodeURIComponent(token)}`);
       setVerified(true);
       toast.success("Email verified successfully!");
     } catch (error: any) {
